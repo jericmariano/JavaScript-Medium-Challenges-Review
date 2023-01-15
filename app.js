@@ -1,5 +1,5 @@
-function arrLength(arr) {
-    return arr.length
+function lastElem(arr) {
+    return arr[arr.length - 1]
 }
 
-console.log(arrLength([]))
+console.log(lastElem([null, 5, false]))
