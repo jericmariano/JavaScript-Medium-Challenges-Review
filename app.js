@@ -1,12 +1,9 @@
-function getMax(arr) {
-    let max = arr[0]
-
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i] > max) {
-            max = arr[i]
-        }
+function reverseString(str) {
+    let reversedString = ''
+    for (let i = 0; i < str.length; i++) {
+        reversedString = str[i] + reversedString
     }
-    return max
+    return reversedString
 }
 
-console.log(getMax([-300, -100, -200]))
+console.log(reverseString('jeric'))
