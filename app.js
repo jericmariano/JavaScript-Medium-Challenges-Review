@@ -1,5 +1,5 @@
-function filterOutFalsy(arr) {
-    return arr.filter(elem => !!elem === true)
+function converToBoolean(arr) {
+    return arr.map(elem => !!elem)
 }
 
-console.log(filterOutFalsy(['Tomato', 'Orange', 'Banana', false]))
+console.log(converToBoolean([500, 0, "Jeric", "", []]))
